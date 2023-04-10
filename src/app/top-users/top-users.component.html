@@ -1,0 +1,13 @@
+
+<button (click)="toggleTopUsers()" id="toggle">TOP</button>
+<div id="top_users_div" [ngStyle]="{'display': isTopUsersVisible ? 'block' : 'none'}">
+    <button class="close_button" (click)="deleteQuest()">x</button>
+    <h1>Top Users</h1>
+    <p>last 48h</p>
+    <hr>
+    <div id="user_div">
+        <p>1. {{topUsers[0].nickname}}: {{topUsers[0].num_completed_quests}} quests</p>
+        <p>2. {{topUsers[1].nickname}}: {{topUsers[1].num_completed_quests}} quests</p>
+        <p>3. {{topUsers[2].nickname}}: {{topUsers[2].num_completed_quests}} quests</p>
+    </div>
+</div>

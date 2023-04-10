@@ -1,0 +1,26 @@
+<div id="background">
+    <app-header [userId]="userId" [userIsLogedIn]="true" [nickname]="nickname" [tokens]="tokens" (headerLogOutEmite)="logOut()" [haveBadge]="haveBadge"></app-header>
+      
+    <app-navigation-bar></app-navigation-bar>
+      
+    <div class="row">
+        <div class="quests_column">
+          <h2 class="titile">Quests:</h2>
+                <app-write-quest [userId]="userId" (addQuestEmitter)="addQuestCache($event)" (pay30TokensEmitter)="pay30Tokens()"></app-write-quest>
+                <button class="check_button" (click)="refreshQuests()">CHECK IF THERE ARE ANY COMPLETED QUESTS</button>
+                <app-quests *ngFor="let quest of quests.entry" (addTokensLocalyEmitter)="addTokens()" [questId]="quest.resource.Id" [userId]="quest.resource.UserId" [userNickname]="quest.resource.UserNickname" [topic]="quest.resource.Topic" [publication_date]="quest.resource.PublicationDate" [logedUserId]="userId" (deletedQuestEmitter)="removeQuest($event)" (refreshQuestsEmitter)="refreshQuests()" (refreshQuestsEmitter)="refreshPosts()" (refreshQuestsEmitter)="getBadge()" (refreshQuestsEmitter)="getTop3()"></app-quests>
+        
+        </div>
+        
+        <div class="column">
+          <h2 class="titile">Hot Takes</h2>
+          <app-write-post [userId]="userId" (logOutEmitter)="logOut()" (addHotTakeEmitter)="addHotTakeCache($event)"></app-write-post>
+          <app-posts *ngFor="let hotTake of hotTakes" [top3]="top3" [postData]="hotTake.resource" [userId]="userId" (deletedHotTakeEmitter)="removeHotTake($event)"></app-posts>
+        </div>
+
+        <app-top-users [topUsers]="top3"></app-top-users>
+        
+      </div>
+
+    <app-footer></app-footer>
+</div>

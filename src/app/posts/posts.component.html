@@ -1,0 +1,26 @@
+<div class="post_div" [ngClass]="{'badge_post': haveBadge}">
+    <button *ngIf="isLogedInUser()" class="close_button" (click)="deleteHotTake()">x</button>
+    <div class="title_post_div">
+        <div>
+            <div *ngIf="haveBadge" class="badge_div">
+                <img src="./../../assets/gold.png" alt="badge" class="badgeImage">
+            </div>
+            <p class="user_name">{{postData.UserNickname}}</p>
+        </div>
+        <p class="date">{{formatDateString(postData.PublicationDate)}}</p>
+    </div>
+    <div class="topicDiv" [ngClass]="{'top3_css': isInTop3}">
+        <p class="topic_p">Topic: {{postData.Topic }}</p>
+    </div>
+    <div class="content_post_div">
+        <p>{{postData.Content}}</p>
+    </div>
+    <div class="datas_about_post_div">
+        <p>Agree: {{agreeReactionNumber}}, Opinion Is Unclear: {{unclearReactionNumber}}, Disagree: {{disagreeReactionNumber}}</p>
+    </div>
+    <div class="reaction_post_div">
+        <button class="reaction_post_div_button" (click)="reactAgree()" [ngClass]="{'pressed_reaction_post_div': agreeButtonPressed}">AGREE</button>
+        <button class="reaction_post_div_button" (click)="reactUnclear()" [ngClass]="{'pressed_reaction_post_div': unclearButtonPressed}">Opinion Is Unclear</button>
+        <button class="reaction_post_div_button" (click)="reactDisagree()" [ngClass]="{'pressed_reaction_post_div': disagreeButtonPressed}">DISAGREE</button>
+    </div>
+</div>

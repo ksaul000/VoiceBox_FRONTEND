@@ -1,0 +1,102 @@
+.write_post_div{
+    min-width: 500px;
+    max-width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: -5px -5px 7px 4px rgba(59, 31, 0, 0.796);
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8700d46;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.post_text_area{
+    width: 100%;
+    width: 95%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+    resize: none;
+}
+  
+  /* Label */
+  .label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    color: #999;
+    background-color: #fff;
+    padding: 0 5px;
+  }
+  
+  /* Focus state */
+  .post_text_area:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .post_button{
+    margin: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d36e0981;
+    font-size: 18px;
+    border: solid rgb(94, 64, 0) 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .post_button:hover{
+    background-color: #8b5400;
+    color: #fff;
+    transition: 400ms;
+    box-shadow: 0px 0px 10px 5px rgba(90, 77, 0, 0.796);
+  }
+
+  .content{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .post_button_div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .post_text_area::placeholder {
+    color: gray;
+    font-style: italic;
+  }
+
+  .topic_input{
+    width: 98%;
+    border-radius: 10px;
+    height: 30px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+  }
+
+  .topic_input::placeholder {
+    color: gray;
+    font-style: italic;
+  }
+
+  .error-input {
+    border: 3px solid red;
+  }

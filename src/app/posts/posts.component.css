@@ -1,0 +1,174 @@
+
+.post_div {
+    min-width: 500px;
+    max-width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: -5px -5px 7px 4px rgba(59, 31, 0, 0.796);
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+  }
+  
+  /* Title container */
+  .title_post_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* User name */
+  .user_name {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #000000;
+    float: left;
+  }
+  
+  /* Date */
+  .date {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Content */
+  .content_post_div {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Data about post */
+  .datas_about_post_div {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+
+  .reaction_post_div{
+    display: inline;
+    display: flex;
+  }
+  
+  /* Reaction buttons */
+  .reaction_post_div_button {
+    margin: 10px auto;
+    min-width: 30%;
+    max-width: 40%;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d36e0981;
+    font-size: 18px;
+    border: solid rgb(94, 64, 0) 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 60px;
+    width: 70px;
+}
+  
+  /* Hover state */
+  .reaction_post_div_button:hover {
+    background-color: #8b5400;
+    color: #fff;
+    transition: 400ms;
+    box-shadow: 0px 0px 10px 5px rgba(90, 77, 0, 0.796);
+  }
+
+  .pressed_reaction_post_div {
+    color: #fff;
+    background-color: #8b5400;
+    transition: 400ms;
+  }
+
+  .close_button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #9b610b91;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border: #000000 solid 3px;
+  }
+  
+  .close_button:hover {
+    background-color: #513204f8;
+    color: #fff;
+  }
+
+  .topicDiv{
+    background-color: #a08242;
+    border: #000000 solid 3px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .topic_p{
+    padding: 3px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+
+  .badge_div{
+    height: 30px;
+    width: 25px;
+    float: left;
+}
+
+.badgeImage{
+  margin: 0;
+  padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.badge_post{
+  animation: move-and-glow 2s ease-in-out infinite;
+}
+
+@keyframes move-and-glow {
+  0% {
+    box-shadow: 0 0 20px 10px rgb(114, 88, 1);
+  }
+  50% {
+    box-shadow: 0 0 50px 30px rgba(255, 251, 0, 0.596);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px rgb(114, 88, 1);
+  }
+}
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .top3_css{
+    background: linear-gradient(to right, #f00, #0f0, #00f);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+  }

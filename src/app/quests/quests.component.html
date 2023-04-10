@@ -1,0 +1,13 @@
+<div class="quest_div">
+    <button *ngIf="isLIUser" class="close_button" (click)="deleteQuest()">x</button>
+    <div class="title_quest_div">
+        <p>{{userNickname}}: {{topic}}</p>
+    </div>
+    <div class="content_quest_div">
+        <p>{{formatDateString(publication_date)}}</p>
+        <p>To get 10 tokens on {{topic}}, react to three posts and share your opinion on the subject.</p>
+    </div>
+    <div *ngIf="!isFinished && !isLIUser" class="buttons_quest_div">
+        <button class="quest_buttons right_button_quest_button" (click)="doneQuest()" [ngClass]="{'completed_button': isCompleted}">DONE</button>
+    </div>
+</div>

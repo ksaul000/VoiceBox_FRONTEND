@@ -1,0 +1,14 @@
+<div class="write_post_div">
+  <div class="wirte_a_post_title">
+    <h2>Write an Opinion</h2>
+  </div>
+  <div>
+    <input maxlength="21" class="topic_input" type="text" placeholder="Topic" [(ngModel)]="topic" [ngClass]="{'error-input': topicError}">
+  </div>
+  <div class="content">
+    <textarea class="post_text_area" placeholder="Your Opinion" [(ngModel)]="hotTake" [ngClass]="{'error-input': hotTakeError}"></textarea>
+  </div>
+  <div (click)="postHotTake()" class="post_button_div">
+    <button class="post_button">POST</button>
+  </div>
+</div>

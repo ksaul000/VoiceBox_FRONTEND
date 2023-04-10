@@ -1,0 +1,41 @@
+<div id="background">
+    <app-header [userIsLogedIn]="false"></app-header>
+      
+    <app-navigation-bar></app-navigation-bar>
+      
+    <form id="signup_form" method="#" action="logIn.html">
+        <div class="signup_container">
+            <div id="left_menu_sign_up">
+                <h2 id="shop_title_p">Sign Up</h2>
+          <hr class="hr_in_main_side_menu">
+          <label id="last_name_label" class="login_text" for="nickname">Nickname:</label>
+          <input class="personalised_input" type="text" id="nickname" name="nickname" required
+              [(ngModel)]="nickname" #nicknameInput aria-label="Nickname"
+              [ngClass]="{'error-input': nicknameError}">
+          
+          <label id="email_label" class="login_text" for="email">Email:</label>
+          <input class="personalised_input" type="email" id="email" name="email" required
+            [(ngModel)]="email" #emailInput aria-label="Email"
+            [ngClass]="{'error-input': emailError}">
+          
+          <label id="password_label" class="login_text" for="password">Password:</label>
+          <input class="personalised_input" type="password" id="password" name="password" required
+            [(ngModel)]="password" #passwordInput aria-label="Password"
+            [ngClass]="{'error-input': passwordError}">
+          
+          <label id="password_re_enter_label" class="login_text" for="password_re_enter">ReEnter Password:</label>
+          <input class="personalised_input" type="password" id="password_re_enter" name="password" required
+            [(ngModel)]="passwordReEnter" #passwordReEnterInput aria-label="Re-enter Password"
+            [ngClass]="{'error-input': reEnterPasswordError}">
+          
+          
+                <input class="submit_button" type="submit" value="Sign Up" (click)="signIn()">
+            
+            <p class="sign_up_text">Do you already have an account? <a class="link" (click)="goInLogIn()">Log In</a></p>  
+          </div>
+            
+        </div>
+    </form>
+
+    <app-footer></app-footer>
+</div>

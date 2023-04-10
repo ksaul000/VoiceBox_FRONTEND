@@ -1,0 +1,110 @@
+.quest_buttons{
+    margin: 10px;
+    min-width: 30%;
+    max-width: 40%;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d36e0981;
+    font-size: 18px;
+    border: solid rgb(94, 64, 0) 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quest_buttons:hover{
+    background-color: #8b5400;
+    color: #fff;
+    transition: 400ms;
+    box-shadow: 0px 0px 10px 5px rgba(90, 77, 0, 0.796);
+  }
+
+
+
+
+/* Style for the quest card */
+.quest_div {
+    width: 300px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 40px;
+    border: 5px solid rgb(0,0,0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: -5px -5px 7px 4px rgba(59, 31, 0, 0.796);
+    min-width: 200px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the title of the quest card */
+  .title_quest_div {
+    border-bottom: 2px solid black ;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title_quest_div p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the content of the quest card */
+  .content_quest_div {
+    margin-bottom: 20px;
+    border-bottom: 2px solid black ;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  
+  .content_quest_div p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  .buttons_quest_div {
+    position: absolute;
+    bottom: 2px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .close_button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #9b610b91;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border: #000000 solid 3px;
+  }
+  
+  .close_button:hover {
+    background-color: #513204f8;
+    color: #fff;
+  }
+
+  .completed_button{
+    box-shadow: 0px 0px 15px 10px rgb(128, 155, 30);
+  }
+  
+
+
+  

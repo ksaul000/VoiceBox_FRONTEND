@@ -1,0 +1,77 @@
+#background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; flex-direction: column;
+    min-width: 1000px;
+    height: 100%;
+  }
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 56%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+  .quests_column{
+    float: left;
+    padding: 15px;
+    background-color: #ad620086;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    min-width: 250px;
+    max-width: 36%;
+    margin-bottom: 100px;
+    height: 100%;
+  }
+
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .titile{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+  }
+
+  .check_button{
+    margin: 10px;
+    width: 300px;
+    box-shadow: -5px -5px 7px 4px rgba(59, 31, 0, 0.796);
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d36e0981;
+    font-size: 18px;
+    border: solid rgb(0, 0, 0) 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 40px;
+    padding: 5px;
+  }
+
+  .check_button:hover{
+    background-color: #8b5400;
+    color: #fff;
+    transition: 400ms;
+    box-shadow: 0px 0px 10px 5px rgba(90, 77, 0, 0.796);
+  }

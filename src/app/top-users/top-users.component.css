@@ -1,0 +1,57 @@
+#top_users_div {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    top: 200px;
+    right: 50px;
+    z-index: 1;
+    width: 200px;
+    background-color: rgb(202, 162, 87);
+    border: black solid 5px;
+    border-radius: 10px;
+  }
+
+#toggle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed;
+    top: 200px;
+    right: 50px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(202, 162, 87);
+    border: black solid 5px;
+    border-radius: 50%;
+}
+
+.close_button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #9b610b91;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border: #000000 solid 3px;
+  }
+  
+  .close_button:hover {
+    background-color: #513204f8;
+    color: #fff;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid black;
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  #user_div{
+    padding: auto;
+  }
+
+  

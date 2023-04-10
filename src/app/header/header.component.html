@@ -1,0 +1,20 @@
+<div class="header">
+    <div id="logo_div">
+        <div id="logo_img_div">
+            <img id="logo_img" src="../../assets/logo.png" alt="Logo">
+        </div>
+        <h1 id="title_header">VioceBox</h1>
+    </div>
+    <div *ngIf="userIsLogedIn" id="logOutDiv">
+        <div id="logOutImageDiv" (click)="logOut()">
+            <img src="./../../assets/logOut.png" alt="logOut" id="logOutImage"/> 
+        </div>
+    </div>
+    <div *ngIf="userIsLogedIn" id="user_div">
+        <p>User: {{this.nickname}}</p>
+        <p>Tokens: {{this.tokens}}tk</p>
+    </div>
+    <div *ngIf="userIsLogedIn && haveBadge" id="badge_div">
+        <img src="./../../assets/gold.png" alt="badge" id="badgeImage"/> 
+    </div>
+</div>
